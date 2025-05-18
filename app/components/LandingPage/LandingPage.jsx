@@ -29,6 +29,17 @@ const images =[Logofx, Hero1, Hero2, Hero3 ]
 const LandingPage = () => {
    const [[page, direction], setPage] = useState([0, 1]);
 
+    const scrollRef = useRef(null);
+    const scroll = (direction) => {
+    if (!scrollRef.current) return;
+    const { scrollLeft, clientWidth } = scrollRef.current;
+    scrollRef.current.scrollTo({
+      left: direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth,
+      behavior: "smooth",
+    });
+  };
+
+
        useEffect(() => {
     const interval = setInterval(() => {
       setPage(([prevPage]) => [prevPage + 1, 1]);
@@ -53,16 +64,7 @@ const LandingPage = () => {
     }),
   };
 
-  const scrollRef = useRef(null);
-    const scroll = (direction) => {
-    if (!scrollRef.current) return;
-    const { scrollLeft, clientWidth } = scrollRef.current;
-    scrollRef.current.scrollTo({
-      left: direction === "left" ? scrollLeft - clientWidth : scrollLeft + clientWidth,
-      behavior: "smooth",
-    });
-  };
-
+ 
 
 const controls = useAnimation();
 
@@ -232,7 +234,7 @@ const repeated = [...testimonials, ...testimonials];
         >
           <FaChevronCircleRight className='text-4xl'/>
         </button>
-      <div className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 ' ref={scrollRef}>
+      <div  ref={scrollRef} className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 '>
         <div className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
           <Image 
             src={Image5}
@@ -316,7 +318,7 @@ const repeated = [...testimonials, ...testimonials];
         <h1 className={`text-6xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>What is New ?</h1>
         <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-2`}>Stay updated on the latest trends, insights, and innovations in the food industry.</p>
         <div>
-          <div className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 ' ref={scrollRef}>
+          <div className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 '>
             <motion.div
               initial={{ y: 200, opacity: 0 }} // from top to bottom
               whileInView={{ y: 0, opacity: 1 }}
@@ -397,7 +399,7 @@ const repeated = [...testimonials, ...testimonials];
         <h1 className={`text-6xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>Delicious Recipes</h1>
         <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-2`}>Find culinary inspirations withour collections of recipes featuring &nbsp;<span className={`text-[#9FA738] ${rokkitt.className} font-bold`}>Freddy Hirsch</span> &nbsp; ingredients</p>
         <div>
-          <div className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 ' ref={scrollRef}>
+          <div className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 ' >
             <motion.div
               initial={{ y: 200, opacity: 0 }} // from top to bottom
               whileInView={{ y: 0, opacity: 1 }}
