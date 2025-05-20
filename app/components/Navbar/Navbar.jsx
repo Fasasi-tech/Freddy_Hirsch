@@ -23,27 +23,27 @@ const Navbar = () => {
                     height={18}
                 />
             </div>
-            <div className='w-[800px] h-[72px] bg-white flex items-center justify-around rounded-3xl'>
-                <ul className="flex items-center text-lg text-[#123C63]   justify-around w-full">
+            <div className='w-[40rem] h-[3.5rem] bg-white flex items-center justify-around rounded-xl'>
+                <ul className="flex items-center text-md text-[#123C63]   justify-around w-full">
                     <li className='flex items-center justify-center h-full flex-1 hover:text-[#9FA738] border-r-2 border-r-[#123C63]'>
-                        <Link href=""  className="text-center w-full font-bold">Home</Link>
+                        <Link href=""  className="text-center w-full ">Home</Link>
                     </li>
                     <li className='flex items-center justify-center h-full flex-1 hover:text-[#9FA738] border-r-2 border-r-[#123C63] '>
-                        <Link href=""  className="text-center w-full font-bold">About Us</Link>
+                        <Link href=""  className="text-center w-full ">About Us</Link>
                     </li>
                     <li className='flex items-center justify-center h-full flex-1 hover:text-[#9FA738] border-r-2 border-r-[#123C63]'>
-                        <Link href=""  className="text-center w-full font-bold">Our Solutions</Link>
+                        <Link href=""  className="text-center w-full ">Our Solutions</Link>
                     </li>
                     <li className='flex items-center justify-center h-full flex-1 hover:text-[#9FA738] border-r-2 border-r-[#123C63]'>
-                        <Link href=""  className="text-center w-full font-bold">News</Link>
+                        <Link href=""  className="text-center w-full ">News</Link>
                     </li>
                     <li className='flex items-center justify-center h-full flex-1 hover:text-[#9FA738] '>
-                        <Link href=""  className="text-center w-full font-bold">Careers</Link>
+                        <Link href=""  className="text-center w-full ">Careers</Link>
                     </li>
                     
                 </ul>
             </div>
-            <div className='w-[141px] h-[72px] bg-[#9EA615] hover:bg-[#123C63]  flex items-center justify-around  text-white font-bold  rounded-xl cursor-pointer'>
+            <div className='w-[8.8rem] h-[3.5rem] bg-[#9EA615] hover:bg-[#123C63]  flex items-center justify-around  text-white rounded-xl cursor-pointer'>
            
                 <Link className='' href="/contact-us  ">Contact Us</Link>
                    

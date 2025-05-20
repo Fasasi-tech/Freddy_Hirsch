@@ -161,17 +161,17 @@ const repeated = [...testimonials, ...testimonials];
       </AnimatePresence>
         <div className="relative z-20">
           <Navbar />
-          <section className="flex flex-col items-center justify-center  text-white mt-36">
-            <div className='min-w-[580px] max-w-[580px]'>
+          <section className="flex flex-col items-center justify-center  text-white mt-28">
+            <div className='min-w-[36.25rem] max-w-[36.25rem]'>
                 <h1 className={`text-7xl font-extrabold ${rokkitt.className}`}>African Heritage.</h1>
                 <h1 className={`text-7xl font-extrabold ${rokkitt.className}`}>Global Innovation.</h1>
-                <p className={`mt-4 text-4xl   ${rokkitt.className} text-center`}>Customized Ingredient Solutions for West African food Leader</p>
+                <p className={`mt-4 text-xl   ${rokkitt.className} text-center`}>Customized Ingredient Solutions for West African food Leader</p>
             </div>
             <div className='mt-4 flex items-center justify-between gap-6'>
-                <Link href="" className='w-[245px] h-[66px] bg-[#9FA738] text-white flex items-center justify-center font-bold rounded-md'>
+                <Link href="" className='w-[14rem] h-[3rem] bg-[#9FA738] text-white flex items-center justify-center font-bold rounded-md'>
                   Discover Our Solutions
                 </Link>
-                <Link href="" className='w-[245px] h-[66px] bg-red-600 text-white flex items-center justify-center font-bold rounded-md'>
+                <Link href="" className='w-[14rem] h-[3rem] bg-red-600 text-white flex items-center justify-center font-bold rounded-md'>
                   Request a Free Sample
                 </Link>
             </div>
@@ -180,22 +180,22 @@ const repeated = [...testimonials, ...testimonials];
         </section>
         </div>
     </div>
-    <div className='bg-white h-[695px] px-2 md:px-8 lg:px-30 py-24 w-full' >
+    <div className='bg-white h-[43.43rem] px-2 md:px-8 lg:px-30 py-24 w-full' >
      
-      <div className='flex  items-center justify-between w-full'>
+      <div className='flex  items-center justify-end w-full'>
         <motion.div
           initial={{ x: -200, opacity: 0 }} // from top to bottom
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 2, ease: 'easeOut' }}
           viewport={{ once: true }} // only animates the first time it comes into view
-          className=' max-w-[940px] h-[480]   rounded-2xl'>
+          className=' max-w-1/2 h-[480]   rounded-2xl'>
           <h1
            
-            className={`text-7xl ${rokkitt.className} font-bold`}
+            className={`text-5xl ${rokkitt.className} font-bold`}
           >
             Combining Tradition with Innovation
           </h1>
-          <p className={`text-3xl mt-4 ${rokkitt.className}`}>
+          <p className={`text-2xl mt-4 ${rokkitt.className}`}>
             At <span className={`text-[#9FA738] ${rokkitt.className} font-bold`}>Freddy Hersch Nigeria,</span> our journey began with a simple
             but powerful mission - to blend the rich, diverse culinary heritage of Africa with cutting
             with cutting-edge global innovation. Founded to serve the evolving needs
@@ -208,82 +208,83 @@ const repeated = [...testimonials, ...testimonials];
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, ease: 'easeIn' }}
           viewport={{ once: true }} // only animates the first time it comes into view
-        className=''>
+        className='w-full h-[30rem] justify-self-end relative'>
           <Image 
             src={Image3}
-            width={500}
-            height={500}
+             fill
+            className="object-contain"
             alt='image'
              priority
           />
         </motion.div>
       </div>
     </div>
-    <div className=' h-[695px] px-2 md:px-8 lg:px-30 bg-[#123c63]  relative w-full'>
-      <h1 className={`text-6xl ${rokkitt.className} flex items-center justify-center font-bold  text-white pt-12`}>Our Solutions</h1>
+    <div className=' h-[34rem] px-2 md:px-8 lg:px-30 bg-[#123c63]  relative w-full'>
+      <h1 className={`text-5xl ${rokkitt.className} flex items-center justify-center font-bold  text-white pt-12`}>Our Solutions</h1>
         <button
           onClick={() => scroll("left")}
-          className="absolute left-24 top-1/2 text-[#9FA738] -translate-y-1/2 z-10 p-2 rounded-full cursor-pointer"
+          className="absolute left-25 top-1/2 text-[#9FA738] -translate-y-1/2 z-10 p-2 rounded-full cursor-pointer"
         >
           <FaChevronCircleLeft className='text-4xl'/>
         </button>
 
         <button
           onClick={() => scroll("right")}
-          className="absolute right-24 top-1/2 -translate-y-1/2 z-10 text-[#9FA738] p-2 rounded-full cursor-pointer"
+          className="absolute right-25 top-1/2 -translate-y-1/2 z-10 text-[#9FA738] p-2 rounded-full cursor-pointer"
         >
           <FaChevronCircleRight className='text-4xl'/>
         </button>
-      <div  ref={scrollRef} className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 '>
-        <div className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+      <div  ref={scrollRef} className='mt-8 flex items-center overflow-x-auto space-x-6 scroll-smooth no-scrollbar justify-around gap-2 '>
+        <div className='px-4 h-[20rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  pt-6 pb-2 min-w-[18rem] border border-white/20'>
           <Image 
             src={Image5}
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             alt='image5'
           />
-          <p className={`mt-4 text-white text-4xl font-medium text-center ${rokkitt.className}`}>Culinary</p>
+          <p className={`mt-2 text-white text-2xl font-medium text-center ${rokkitt.className}`}>Culinary</p>
         </div>
-        <div className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+        <div className='px-4 h-[20rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  pt-6 pb-2 min-w-[18rem] border border-white/20'>
           <Image 
             src={Image4}
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             alt='image4'
           />
-          <p className={`mt-4 text-white text-4xl font-medium text-center ${rokkitt.className}`}>Snacks</p>
+          <p className={`mt-2 text-white text-2xl font-medium text-center ${rokkitt.className}`}>Snacks</p>
         </div>
-        <div className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+        <div className='px-4 h-[20rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  pt-6 pb-2 min-w-[18rem] border border-white/20'>
           <Image 
             src={Image6}
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             alt='image6'
           />
-          <p className={`mt-4 text-white text-4xl font-medium text-center ${rokkitt.className}`}>Sweets</p>
+          <p className={`mt-2 text-white text-2xl font-medium text-center ${rokkitt.className}`}>Sweets</p>
         </div>
-        <div className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+        <div className='px-4 h-[20rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  pt-6 pb-2 min-w-[18rem] border border-white/20'>
           <Image 
             src={Image2}
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             alt='image2'
           />
-          <p className={`mt-4 text-white text-4xl font-medium text-center ${rokkitt.className}`}>Textures & Stabilizers</p>
+          <p className={`mt-2 text-white text-2xl font-medium text-center ${rokkitt.className}`}>Textures & Stabilizers</p>
         </div>
-        <div className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+        <div className='px-4 h-[20rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  pt-6 pb-2 min-w-[18rem] border border-white/20'>
           <Image 
             src={Image1}
-            width={300}
-            height={300}
-            alt='image5'
+            width={400}
+            height={400}
+            alt='image1'
           />
-          <p className={`mt-4 text-white text-4xl font-medium text-center ${rokkitt.className}`}>Meat</p>
-        </div> 
+          <p className={`mt-2 text-white text-2xl font-medium text-center ${rokkitt.className}`}>Meat</p>
+        </div>
+        
       </div>
     </div>
-    <div className=' h-[695px] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full'>
-      <h1 className={`text-6xl ${rokkitt.className} pb-16 flex items-center justify-center font-bold  text-white pt-12`}>Testimonials</h1>
+    <div className=' h-[50rem] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full pt-20'>
+      <h1 className={`text-5xl ${rokkitt.className} pb-16 flex items-center justify-center font-bold  text-white pt-12`}>Testimonials</h1>
         <motion.div 
           //  className="flex gap-x-6"
         animate={{ x: ["0%", "-100%"] }}
@@ -296,10 +297,10 @@ const repeated = [...testimonials, ...testimonials];
                 {repeated.map((testimonial, index) => (
           <div
             key={index}
-            className="min-h-[386px] min-w-[50rem] max-w-[50rem] backdrop-blur-md bg-white/10 rounded-2xl shadow-lg border border-white/20 overflow-hidden"
+            className="min-h-[24rem] min-w-[40rem] max-w-[40rem] backdrop-blur-md bg-white/10 rounded-2xl shadow-lg border border-white/20 overflow-hidden"
           >
-            <FaQuoteLeft className="text-4xl text-white font-bold ml-8 mt-16" />
-            <div className="flex items-center justify-start mt-4 ml-8 max-w-72 gap-x-2">
+            <FaQuoteLeft className="text-4xl text-white font-bold ml-8 mt-8" />
+            <div className="flex items-center justify-start mt-4 ml-8 max-w-56 gap-x-2">
               {[...Array(5)].map((_, i) => (
                 <RiStarSFill key={i} className="text-3xl text-yellow-500 mt-4" />
               ))}
@@ -314,27 +315,27 @@ const repeated = [...testimonials, ...testimonials];
         ))}
         </motion.div>
     </div>
-    <div className='h-[810px] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full'>
-        <h1 className={`text-6xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>What is New ?</h1>
-        <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-2`}>Stay updated on the latest trends, insights, and innovations in the food industry.</p>
+    <div className='h-[50rem] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full'>
+        <h1 className={`text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-20`}>What is New ?</h1>
+        <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center  text-white pt-2`}>Stay updated on the latest trends, insights, and innovations in the food industry.</p>
         <div>
-          <div className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 '>
+          <div className='mt-8 flex items-center overflow-x-auto space-x-2  scroll-smooth no-scrollbar justify-around gap-2 '>
             <motion.div
               initial={{ y: 200, opacity: 0 }} // from top to bottom
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 2, ease: 'easeIn' }}
               viewport={{ once: true }}
-            className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
-              <div>
+            className='px-6 h-[22rem] backdrop-blur-md bg-white/10 rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+              <div className='max-w-72 '>
                 <p className={`mt-4 text-[#9FA738] text-sm font-bold  ${rokkitt.className}`}>
                   May 20, 2025
                 </p>
-                <h3 className={`mt-4 text-white font-medium text-2xl pb-8 ${rokkitt.className}`}>Exploring the Future of African Flavours</h3>
+                <h3 className={`mt-4 text-white font-medium text-xl pb-4 ${rokkitt.className}`}>Exploring the Future of African Flavours</h3>
               </div>
               <Image 
                 src={meal1}
-                width={400}
-                height={400}
+                width={300}
+                height={300}
                 alt='meal'
               />
            
@@ -344,17 +345,17 @@ const repeated = [...testimonials, ...testimonials];
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 2, ease: 'easeIn' }}
               viewport={{ once: true }}
-              className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
-              <div>
+              className='px-6 h-[22rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+              <div className='max-w-72 '>
                 <p className={`mt-4 text-[#9FA738] text-sm font-bold  ${rokkitt.className}`}>
                   May 20, 2025
                 </p>
-                <h3 className={`mt-4 text-white font-medium text-2xl pb-8 ${rokkitt.className}`}>New Advanced Food Stabilization</h3>
+                <h3 className={`mt-4 text-white font-medium text-xl pb-4 ${rokkitt.className} text-center`}>New Advanced Food Stabilization</h3>
               </div>
               <Image 
                 src={meal2}
-                width={400}
-                height={400}
+                width={300}
+                height={300}
                 alt='meals'
               />
            
@@ -364,17 +365,17 @@ const repeated = [...testimonials, ...testimonials];
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: 'easeIn' }}
                 viewport={{ once: true }}
-                className='px-6 h-[25rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
-              <div>
+                className='px-6 h-[22rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+              <div className='max-w-72'>
                 <p className={`mt-4 text-[#9FA738] text-sm font-bold  ${rokkitt.className}`}>
                   May 20, 2025
                 </p>
-                <h3 className={`mt-4 text-white font-medium text-2xl pb-8 ${rokkitt.className}`}>5 Emerging Food Tech Startups in 2025</h3>
+                <h3 className={`mt-4 text-white font-medium text-xl pb-4 ${rokkitt.className}`}>5 Emerging Food Tech Startups in 2025</h3>
               </div>
               <Image 
                 src={meal3}
-                width={400}
-                height={400}
+                width={300}
+                height={300}
                 alt='meal'
               />
            
@@ -390,30 +391,30 @@ const repeated = [...testimonials, ...testimonials];
             repeatType: "loop",
             ease: "easeInOut",
           }}
-        className='flex items-center justify-center mt-8 '>
+        className='flex items-center justify-center mt-12'>
           <p className='px-12 py-4 text-white font-semibold bg-[#9FA738] rounded-xl cursor-pointer max-w-64 text-center '>Read More</p>
         </motion.div>
         
     </div>
      <div className='h-[810px] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full'>
-        <h1 className={`text-6xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>Delicious Recipes</h1>
+        <h1 className={`text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>Delicious Recipes</h1>
         <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-2`}>Find culinary inspirations withour collections of recipes featuring &nbsp;<span className={`text-[#9FA738] ${rokkitt.className} font-bold`}>Freddy Hirsch</span> &nbsp; ingredients</p>
         <div>
-          <div className='mt-8 flex items-center overflow-x-auto space-x-12 scroll-smooth no-scrollbar justify-around gap-2 ' >
+          <div className='mt-8 flex items-center overflow-x-auto space-x-4 scroll-smooth no-scrollbar justify-center gap-2 ' >
             <motion.div
               initial={{ y: 200, opacity: 0 }} // from top to bottom
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 2, ease: 'easeIn' }}
               viewport={{ once: true }}
-            className='px-6 h-[22rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+            className='px-6 h-[18rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[20rem] max-w-[20rem] border border-white/20'>
               <Image 
                 src={meal6}
-                width={400}
-                height={400}
+                width={300}
+                height={300}
                 alt='meal'
               />
               <div>
-                <h3 className={`mt-4 text-white text-center font-medium text-2xl pb-8 ${rokkitt.className}`}>Jollof Rice</h3>
+                <h3 className={`mt-4 text-white text-center font-medium text-2xl pb-2 ${rokkitt.className}`}>Jollof Rice</h3>
               </div>
            
             </motion.div>
@@ -422,12 +423,12 @@ const repeated = [...testimonials, ...testimonials];
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 2, ease: 'easeIn' }}
               viewport={{ once: true }}
-              className='px-6 h-[22rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+              className='px-6 h-[18rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[20rem] max-w-[20rem] border border-white/20'>
               
               <Image 
                 src={meal4}
-                width={400}
-                height={400}
+                width={300}
+                height={300}
                 alt='meals'
               />
               <div>
@@ -439,7 +440,7 @@ const repeated = [...testimonials, ...testimonials];
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: 'easeIn' }}
                 viewport={{ once: true }}
-                className='px-6 h-[22rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
+                className='px-6 h-[18rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[20rem] max-w-[20rem] border border-white/20'>
               <div>
               </div>
               <Image 
