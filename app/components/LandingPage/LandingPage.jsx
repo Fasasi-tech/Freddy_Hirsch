@@ -319,7 +319,7 @@ const repeated = [...testimonials, ...testimonials];
         <h1 className={`text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-20`}>What is New ?</h1>
         <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center  text-white pt-2`}>Stay updated on the latest trends, insights, and innovations in the food industry.</p>
         <div>
-          <div className='mt-8 flex items-center overflow-x-auto space-x-2  scroll-smooth no-scrollbar justify-around gap-2 '>
+          <div className='mt-8 flex items-center overflow-x-auto space-x-4  scroll-smooth no-scrollbar justify-center gap-2 '>
             <motion.div
               initial={{ y: 200, opacity: 0 }} // from top to bottom
               whileInView={{ y: 0, opacity: 1 }}
