@@ -315,7 +315,7 @@ const repeated = [...testimonials, ...testimonials];
         ))}
         </motion.div>
     </div>
-    <div className='h-[50rem] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full'>
+    <div className='h-[50rem] px-2 md:px-8 lg:px-30 overflow-hidden bg-red-500 w-full'>
         <h1 className={`text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-20`}>What is New ?</h1>
         <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center  text-white pt-2`}>Stay updated on the latest trends, insights, and innovations in the food industry.</p>
         <div>
@@ -327,7 +327,7 @@ const repeated = [...testimonials, ...testimonials];
               viewport={{ once: true }}
             className='px-6 h-[22rem] backdrop-blur-md bg-white/10 rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
               <div className='max-w-72 '>
-                <p className={`mt-4 text-[#9FA738] text-sm font-bold  ${rokkitt.className}`}>
+                <p className={`mt-4 text-white text-sm font-bold  ${rokkitt.className}`}>
                   May 20, 2025
                 </p>
                 <h3 className={`mt-4 text-white font-medium text-xl pb-4 ${rokkitt.className}`}>Exploring the Future of African Flavours</h3>
@@ -347,7 +347,7 @@ const repeated = [...testimonials, ...testimonials];
               viewport={{ once: true }}
               className='px-6 h-[22rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
               <div className='max-w-72 '>
-                <p className={`mt-4 text-[#9FA738] text-sm font-bold  ${rokkitt.className}`}>
+                <p className={`mt-4 text-white text-sm font-bold  ${rokkitt.className}`}>
                   May 20, 2025
                 </p>
                 <h3 className={`mt-4 text-white font-medium text-xl pb-4 ${rokkitt.className} text-center`}>New Advanced Food Stabilization</h3>
@@ -367,7 +367,7 @@ const repeated = [...testimonials, ...testimonials];
                 viewport={{ once: true }}
                 className='px-6 h-[22rem] backdrop-blur-md bg-white/10  rounded-2xl shadow-lg  py-6 min-w-[22rem] border border-white/20'>
               <div className='max-w-72'>
-                <p className={`mt-4 text-[#9FA738] text-sm font-bold  ${rokkitt.className}`}>
+                <p className={`mt-4 text-white text-sm font-bold  ${rokkitt.className}`}>
                   May 20, 2025
                 </p>
                 <h3 className={`mt-4 text-white font-medium text-xl pb-4 ${rokkitt.className}`}>5 Emerging Food Tech Startups in 2025</h3>
@@ -396,7 +396,7 @@ const repeated = [...testimonials, ...testimonials];
         </motion.div>
         
     </div>
-     <div className='h-[810px] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full'>
+     <div className='h-[810px] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#1BB17D] w-full'>
         <h1 className={`text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>Delicious Recipes</h1>
         <p className={`text-xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-2`}>Find culinary inspirations withour collections of recipes featuring &nbsp;<span className={`text-[#9FA738] ${rokkitt.className} font-bold`}>Freddy Hirsch</span> &nbsp; ingredients</p>
         <div>
