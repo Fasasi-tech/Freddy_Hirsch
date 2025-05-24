@@ -87,63 +87,9 @@ const controls = useAnimation();
     });
   }, [controls]);
 
-
-  const testimonials = [
-  {
-    name: "Amanda Willy",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-  },
-  {
-    name: "Amanda Willy",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-  },
-  {
-    name: "Amanda Willy",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-  },
-  {
-    name: "Amanda Willy",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-  },
-  {
-    name: "Amanda Willy",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-  },
-  {
-    name: "Amanda Willy",
-    text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
-  },
-];
-
-const repeated = [...testimonials, ...testimonials];
-
   return (
     <>
-      <div  className="relative h-screen w-full overflow-hidden">
+      {/* <div  className="relative h-screen w-full overflow-hidden">
          <AnimatePresence custom={direction}>
         <motion.div
           key={page}
@@ -153,7 +99,7 @@ const repeated = [...testimonials, ...testimonials];
           animate="center"
           exit="exit"
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 w-full h-full z-0"
         >
           <Image
             src={images[imageIndex]}
@@ -190,7 +136,66 @@ const repeated = [...testimonials, ...testimonials];
           
         </section>
         </div>
-    </div>
+    </div> */}
+    <div className="relative w-full h-screen overflow-hidden">
+  <AnimatePresence custom={direction}>
+    <motion.div
+      key={page}
+      custom={direction}
+      variants={variants}
+      initial="enter"
+      animate="center"
+      exit="exit"
+      transition={{ duration: 1, ease: 'easeInOut' }}
+      className="absolute inset-0 w-full h-full z-0"
+    >
+      <Image
+        src={images[imageIndex]}
+        alt={`Slide ${imageIndex}`}
+        fill
+        priority
+        className=""
+        
+      />
+    </motion.div>
+  </AnimatePresence>
+
+  {/* Content above image */}
+  <div className="relative z-20 h-full flex flex-col">
+    <Navbar />
+
+    {/* Hero Section */}
+    <section className="flex flex-1 flex-col items-center justify-center text-white px-4 mt-4 sm:mt-12 lg:mt-28">
+      <div className="w-full text-center md:min-w-[36.25rem] md:max-w-[36.25rem]">
+        <h1 className={`text-3xl md:text-2xl lg:text-7xl font-bold lg:font-extrabold ${rokkitt.className}`}>
+          African Heritage.
+        </h1>
+        <h1 className={`text-3xl md:text-2xl lg:text-7xl font-bold lg:font-extrabold ${rokkitt.className}`}>
+          Global Innovation.
+        </h1>
+        <p className={`mt-4 text-xl ${rokkitt.className} text-center`}>
+          Customized Ingredient Solutions for West African food Leader
+        </p>
+      </div>
+
+      <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0 space-y-4">
+        <Link
+          href=""
+          className="w-[14rem] h-[3rem] bg-[#9FA738] hover:bg-[#003A62] text-white flex items-center justify-center font-bold rounded-md"
+        >
+          Discover Our Solutions
+        </Link>
+        <Link
+          href=""
+          className="w-[14rem] h-[3rem] bg-red-600 hover:bg-[#003A62] text-white flex items-center justify-center font-bold rounded-md"
+        >
+          Request a Free Sample
+        </Link>
+      </div>
+    </section>
+  </div>
+</div>
+
     <div className='bg-white h-auto lg:h-[43.43rem] px-2 md:px-8 lg:px-30 py-24 w-full' >
      
       <div className='flex flex-col lg:flex-row z-10 justify-between w-full gap-10'>
@@ -207,7 +212,7 @@ const repeated = [...testimonials, ...testimonials];
             Combining Tradition with Innovation
           </h1>
           <p className={`text-lg lg:text-2xl mt-4 ${rokkitt.className}`}>
-            At <span className={`text-[#9FA738] ${rokkitt.className} font-bold`}>Freddy Hersch Nigeria,</span> our journey began with a simple
+            At <span className={`text-[#9FA738] ${rokkitt.className} font-bold`}>Freddy Hirsch Nigeria,</span> our journey began with a simple
             but powerful mission - to blend the rich, diverse culinary heritage of Africa with cutting
             with cutting-edge global innovation. Founded to serve the evolving needs
             of the West African food industry, we have grown into a trusted B2B partner for large-scale manufacturers, Quick Service Restaurants (QSRs), 
@@ -285,49 +290,7 @@ const repeated = [...testimonials, ...testimonials];
     ))}
   </div>
 </div>
-
-    <div className='relative lg:h-[45rem] h-[34rem] px-2 md:px-8 lg:px-30 overflow-hidden bg-[#123c63] w-full sm:pt-4 lg:pt-20'>
-       <Image 
-          src={testimonial}
-          alt='solution'
-          fill
-          className="object-cover z-0"
-
-         />
-     
-      <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${rokkitt.className} pb-8 flex items-center justify-center font-bold  text-white`}>Testimonials</h1>
-       
-        <motion.div 
-          //  className="flex gap-x-6"
-        animate={{ x: ["0%", "-100%"] }}
-        transition={{
-          duration: 30,
-          ease: "linear",
-          repeat: Infinity,
-        }}
-        className='flex items-center  justify-center gap-x-6'>
-                {repeated.map((testimonial, index) => (
-          <div
-            key={index}
-            className="min-h-[24rem] min-w-[24rem] max-w-[30rem] lg:min-w-[40rem] lg:max-w-[40rem] backdrop-blur-md bg-white/10 rounded-2xl shadow-lg border border-white/20 overflow-hidden"
-          >
-            <FaQuoteLeft className="text-xl lg:text-4xl text-white font-bold ml-4 lg:ml-8 mt-2 lg:mt-8" />
-            <div className="flex items-center justify-start mt-2 lg:mt-4 ml-2  lg:ml-8 max-w-32 lg:max-w-56 gap-x-2">
-              {[...Array(5)].map((_, i) => (
-                <RiStarSFill key={i} className="text-3xl text-yellow-500 mt-4" />
-              ))}
-            </div>
-            <p className={`${rokkitt.className} text-xl text-white ml-4 lg:ml-8 mt-4`}>
-              {testimonial.text}
-            </p>
-            <p className={`${rokkitt.className} text-[#9EA615] font-medium ml-4 lg:ml-8 mt-12`}>
-              {testimonial.name}
-            </p>
-          </div>
-        ))}
-        </motion.div>
-    </div>
-    <div className=' relative px-2 sm:px-4 md:px-8 lg:px-30 overflow-hidden bg-[linear-gradient(180deg,_#BA1E34_0%,_#540E17_64%,_#540E17_100%)] w-full pt-20 pb-16'>
+    <div className=' relative px-2 sm:px-4 md:px-8 lg:px-30 overflow-hidden bg-[linear-gradient(180deg,_#BA1E34_0%,_#540E17_64%,_#540E17_100%)] w-full pt-8 lg:pt-20 pb-16'>
       <Image 
           src={recipe}
           alt='recipe'
@@ -424,7 +387,7 @@ const repeated = [...testimonials, ...testimonials];
         </motion.div>
         
     </div>
-     <div className=' px-2 pt-20 pb-16 md:px-8 lg:px-30 relative overflow-hidden bg-gradient-to-b from-[#94182A] to-[#2E070D] w-full'>
+     <div className=' px-2 pt-12  pb-16 md:px-8 lg:px-30 relative overflow-hidden bg-gradient-to-b from-[#94182A] to-[#2E070D] w-full'>
           
           <Image 
           src={testimonial}
@@ -433,8 +396,8 @@ const repeated = [...testimonials, ...testimonials];
           className="object-cover z-0"
 
          />
-        <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>Delicious Recipes</h1>
-        <p className={`text-lg lg:text-xl ${rokkitt.className} pb-2 flex text-center items-center justify-center font-bold  text-white pt-2`}>Find culinary inspirations withour collections of recipes featuring Freddy Hirsch ingredients</p>
+        <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white sm:pt-8 lg:pt-12`}>Delicious Recipes</h1>
+        <p className={`text-lg lg:text-xl ${rokkitt.className} pb-2 flex text-center items-center justify-center font-bold  text-white pt-2`}>Find culinary inspirations with our collections of recipes featuring Freddy Hirsch ingredients</p>
         <div>
           <div className='mt-8 flex flex-col lg:flex-row items-center gap-4 lg:overflow-x-auto scroll-smooth no-scrollbar justify-center' >
             <motion.div
@@ -525,18 +488,34 @@ const repeated = [...testimonials, ...testimonials];
         </div>
       </div>
     </div>
-    <div className='bg-[#003A62] h-[320px] px-2 md:px-8 lg:px-30 relative overflow-hidden w-full '>
-        <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${rokkitt.className} text-white pb-2 flex items-center justify-center font-bold pt-12`}>Newsletter</h1>
-         <div className=' px-2  lg:px-30 pb-16 flex flex-col items-center justify-center'>
-          <h1 className='text-white text-sm lg:text-lg md:text-xl text-center'> Stay updated by subscribing to the newsletter</h1>
-          <form>
-            <div className=' flex lg:flex-row flex-col  items-start justify-start gap-2 md:gap-4 mt-8 '>
-              <input type='email' placeholder='Enter your email' className=' border-2 text-white border-gray-500  py-3  w-96  px-4 text-md outline-0'/>
-              <button type='submit' className='bg-[#9FA738] text-white font-semibold py-3 px-6 rounded-lg cursor-pointer '>Subscribe Now</button>       
-            </div>
-          </form>  
-        </div>
+    <div className='bg-[#003A62] h-[320px] px-4 md:px-8 lg:px-30 relative overflow-hidden w-full'>
+      <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${rokkitt.className} text-white pb-2 flex items-center justify-center font-bold pt-12`}>
+        Newsletter
+      </h1>
+      
+      <div className='px-2 lg:px-30 pb-16 flex flex-col items-center justify-center w-full'>
+        <h1 className='text-white text-sm lg:text-lg md:text-xl text-center'>
+          Stay updated by subscribing to the newsletter
+        </h1>
+
+        <form className="w-full max-w-xl">
+          <div className="flex flex-col lg:flex-row items-stretch justify-center gap-2 md:gap-4 mt-8 w-full">
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              className="border-2 text-white border-gray-500 py-3 px-4 text-md outline-0 w-full"
+            />
+            <button 
+              type="submit" 
+              className="bg-[#9FA738] text-white font-semibold py-3 px-6 rounded-lg cursor-pointer w-full lg:w-56"
+            >
+              Subscribe Now
+            </button>
+          </div>
+        </form>  
+      </div>
     </div>
+
    </>
   )
 }

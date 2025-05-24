@@ -89,7 +89,7 @@ const Footer = () => {
             <p className='text-black mt-12'>Copyright © 2025 | <span className='text-[#9FA738] font-bold'>FREDDY HIRSCH</span>. All rights reserved.</p>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="fixed bottom-4 right-4 bg-[#9FA738] text-black p-3  shadow-md hover:bg-[#86912e] transition-all z-50"
+              className="fixed bottom-4 right-4 bg-[#9FA738] text-white  p-3  shadow-md hover:bg-[#86912e] transition-all z-50"
               aria-label="Scroll to top"
             >
               <FaAngleUp className='text-xl'/>
