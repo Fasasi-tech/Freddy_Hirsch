@@ -166,7 +166,7 @@ const repeated = [...testimonials, ...testimonials];
       </AnimatePresence>
         <div className="relative z-20">
           <Navbar />
-          <section className="flex flex-col items-center justify-center  text-white mt-28">
+          <section className="flex flex-col items-center justify-center  text-white mt-20  lg:mt-28">
             <div className='w-full text-center md:min-w-[36.25rem] md:max-w-[36.25rem]'>
                 <h1 className={`text-3xl md:text-2xl lg:text-7xl font-bold lg:font-extrabold ${rokkitt.className}`}>African Heritage.</h1>
                 <h1 className={`text-3xl md:text-2xl lg:text-7xl font-bold lg:font-extrabold ${rokkitt.className}`}>Global Innovation.</h1>
@@ -193,7 +193,7 @@ const repeated = [...testimonials, ...testimonials];
     </div>
     <div className='bg-white h-auto lg:h-[43.43rem] px-2 md:px-8 lg:px-30 py-24 w-full' >
      
-      <div className='flex flex-col lg:flex-row justify-between w-full gap-10'>
+      <div className='flex flex-col lg:flex-row z-10 justify-between w-full gap-10'>
         <motion.div
           initial={{ x: -200, opacity: 0 }} // from top to bottom
           whileInView={{ x: 0, opacity: 1 }}
