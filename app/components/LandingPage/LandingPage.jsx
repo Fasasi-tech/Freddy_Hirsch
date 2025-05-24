@@ -337,7 +337,7 @@ const repeated = [...testimonials, ...testimonials];
          />
          <div>
         <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white`}>What is New ?</h1>
-        <p className={`text-sm lg:text-xl ${rokkitt.className} pb-2 flex items-center justify-center  text-white pt-2`}>Stay updated on the latest trends, insights, and innovations in the food industry.</p>
+        <p className={`text-lg lg:text-xl ${rokkitt.className} pb-2 flex items-center justify-center  text-white pt-2`}>Stay updated on the latest trends, insights, and innovations in the food industry.</p>
         </div>
         <div>
           <div className="mt-8 flex flex-col lg:flex-row items-center gap-4 lg:overflow-x-auto scroll-smooth no-scrollbar justify-center"
@@ -434,7 +434,7 @@ const repeated = [...testimonials, ...testimonials];
 
          />
         <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${rokkitt.className} pb-2 flex items-center justify-center font-bold  text-white pt-12`}>Delicious Recipes</h1>
-        <p className={`text-sm lg:text-xl ${rokkitt.className} pb-2 flex text-center items-center justify-center font-bold  text-white pt-2`}>Find culinary inspirations withour collections of recipes featuring Freddy Hirsch ingredients</p>
+        <p className={`text-lg lg:text-xl ${rokkitt.className} pb-2 flex text-center items-center justify-center font-bold  text-white pt-2`}>Find culinary inspirations withour collections of recipes featuring Freddy Hirsch ingredients</p>
         <div>
           <div className='mt-8 flex flex-col lg:flex-row items-center gap-4 lg:overflow-x-auto scroll-smooth no-scrollbar justify-center' >
             <motion.div
