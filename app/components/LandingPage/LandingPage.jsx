@@ -275,7 +275,7 @@ const repeated = [...testimonials, ...testimonials];
     ].map(({ src, label }, idx) => (
       <div
         key={idx}
-        className='min-w-full sm:min-w-full md:min-w-full lg:min-w-[18rem] max-w-sm backdrop-blur-md bg-white/10 rounded-2xl shadow-lg pt-6 pb-2 border border-white/20'
+        className='min-w-full sm:min-w-full md:min-w-full lg:min-w-[18rem] max-w-sm backdrop-blur-md bg-white/10 rounded-2xl shadow-lg pt-6 pb-2 px-6 border border-white/20'
       >
         <Image src={src} width={400} height={400} alt={label.toLowerCase()} className='w-full lg:w-full h-auto object-contain' />
         <p className={`mt-2 text-white text-xl sm:text-2xl font-medium text-center ${rokkitt.className}`}>
@@ -309,7 +309,7 @@ const repeated = [...testimonials, ...testimonials];
                 {repeated.map((testimonial, index) => (
           <div
             key={index}
-            className="min-h-[24rem] min-w-[40rem] max-w-[40rem] backdrop-blur-md bg-white/10 rounded-2xl shadow-lg border border-white/20 overflow-hidden"
+            className="min-h-[24rem] min-w-[24rem] max-w-[30rem] lg:min-w-[40rem] lg:max-w-[40rem] backdrop-blur-md bg-white/10 rounded-2xl shadow-lg border border-white/20 overflow-hidden"
           >
             <FaQuoteLeft className="text-xl lg:text-4xl text-white font-bold ml-4 lg:ml-8 mt-2 lg:mt-8" />
             <div className="flex items-center justify-start mt-2 lg:mt-4 ml-2  lg:ml-8 max-w-32 lg:max-w-56 gap-x-2">
