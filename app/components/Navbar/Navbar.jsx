@@ -164,13 +164,14 @@ const Navbar = () => {
       className='z-50 px-2 md:px-8 lg:px-30 flex flex-col'
     >
       <div className='flex items-center justify-between'>
-        <div>
+        <div >
           <Link href='/'>
             <Image
               src={logo}
               alt='logo'
               width={120}
               height={18}
+              
             />
           </Link>
         </div>
@@ -198,7 +199,7 @@ const Navbar = () => {
         </div>
         <div className="md:hidden">
           <button onClick={toggleSidebar}>
-            <BiMenuAltRight className='text-white text-2xl' />
+            <BiMenuAltRight className='text-white text-4xl' />
           </button>
         </div>
       </div>

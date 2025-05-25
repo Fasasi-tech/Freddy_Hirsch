@@ -89,54 +89,7 @@ const controls = useAnimation();
 
   return (
     <>
-      {/* <div  className="relative h-screen w-full overflow-hidden">
-         <AnimatePresence custom={direction}>
-        <motion.div
-          key={page}
-          custom={direction}
-          variants={variants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          className="absolute inset-0 w-full h-full z-0"
-        >
-          <Image
-            src={images[imageIndex]}
-            alt={`Slide ${imageIndex}`}
-            fill
-            priority
-            className="object-cover z-0"
-          />
-        </motion.div>
-      </AnimatePresence>
-        <div className="relative z-20">
-          <Navbar />
-          <section className="flex flex-col items-center justify-center  text-white mt-20  lg:mt-28">
-            <div className='w-full text-center md:min-w-[36.25rem] md:max-w-[36.25rem]'>
-                <h1 className={`text-3xl md:text-2xl lg:text-7xl font-bold lg:font-extrabold ${rokkitt.className}`}>African Heritage.</h1>
-                <h1 className={`text-3xl md:text-2xl lg:text-7xl font-bold lg:font-extrabold ${rokkitt.className}`}>Global Innovation.</h1>
-                <p className={`mt-4 text-xl   ${rokkitt.className} text-center`}>Customized Ingredient Solutions for West African food Leader</p>
-            </div>
-            <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between sm:space-x-4 sm:space-y-0 space-y-4">
-              <Link
-                href=""
-                className="w-[14rem] h-[3rem] bg-[#9FA738] hover:bg-[#003A62] text-white flex items-center justify-center font-bold rounded-md"
-              >
-                Discover Our Solutions
-              </Link>
-              <Link
-                href=""
-                className="w-[14rem] h-[3rem] bg-red-600 hover:bg-[#003A62] text-white flex items-center justify-center font-bold rounded-md"
-              >
-                Request a Free Sample
-              </Link>
-            </div>
-            
-          
-        </section>
-        </div>
-    </div> */}
+      
     <div className="relative w-full h-screen overflow-hidden">
   <AnimatePresence custom={direction}>
     <motion.div
@@ -154,7 +107,7 @@ const controls = useAnimation();
         alt={`Slide ${imageIndex}`}
         fill
         priority
-        className=""
+        className="object-cover "
         
       />
     </motion.div>
@@ -165,7 +118,7 @@ const controls = useAnimation();
     <Navbar />
 
     {/* Hero Section */}
-    <section className="flex flex-1 flex-col items-center justify-center text-white px-4 mt-4 sm:mt-12 lg:mt-28">
+    <section className="flex flex-1 flex-col items-center justify-center text-white px-4  sm:mt-4 lg:mt-28">
       <div className="w-full text-center md:min-w-[36.25rem] md:max-w-[36.25rem]">
         <h1 className={`text-3xl md:text-2xl lg:text-7xl font-bold lg:font-extrabold ${rokkitt.className}`}>
           African Heritage.
@@ -269,7 +222,7 @@ const controls = useAnimation();
   {/* Scrollable Cards */}
   <div
     ref={scrollRef}
-    className='mt-10 flex flex-nowrap overflow-x-auto scroll-smooth no-scrollbar gap-6 relative z-20'
+    className='mt-10 flex flex-nowrap overflow-x-auto  scroll-smooth no-scrollbar gap-6 relative z-20'
   >
     {[
       { src: Image5, label: "Culinary" },
@@ -280,7 +233,7 @@ const controls = useAnimation();
     ].map(({ src, label }, idx) => (
       <div
         key={idx}
-        className='min-w-full sm:min-w-full md:min-w-full lg:min-w-[18rem] max-w-sm backdrop-blur-md bg-white/10 rounded-2xl shadow-lg pt-6 pb-2 px-6 border border-white/20'
+        className='min-w-full sm:min-w-full md:min-w-full lg:min-w-[18rem] max-w-sm backdrop-blur-md bg-white/10 rounded-2xl shadow-lg pt-6 pb-2  px-6 border border-white/20'
       >
         <Image src={src} width={400} height={400} alt={label.toLowerCase()} className='w-full lg:w-full h-auto object-contain' />
         <p className={`mt-2 text-white text-xl sm:text-2xl font-medium text-center ${rokkitt.className}`}>
