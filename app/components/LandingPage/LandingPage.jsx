@@ -25,12 +25,32 @@ import Image3 from '../../../public/image(3).png'
 import Image4 from '../../../public/image4.png'
 import Image5 from '../../../public/image5.png'
 import Image6 from '../../../public/image6.png'
+import pokecut1 from '../../../public/Pokecut1.jpg'
+import pokecut2 from '../../../public/Pokecut2.jpg'
+import pokecut3 from '../../../public/Pokecut3.jpg'
+import pokecut4 from '../../../public/Pokecut4.jpg'
+import imagefx32 from '../../../public/Image_fx32.png'
 import { FaChevronCircleRight, FaChevronCircleLeft, FaQuoteLeft } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
 import halal from '../../../public/halal.png'
 import fssc from '../../../public/fssc.png'
 
-const images =[Logofx, Hero1, Hero3 ]
+const images =[
+  {landscape:Logofx,
+    portrait:pokecut2
+  }, 
+  {landscape:Hero1,
+    portrait:pokecut1
+  }, 
+  {
+    landscape:Hero3,
+    portrait:pokecut3
+  }, 
+  {landscape:imagefx32,
+    portrait:pokecut4
+  }
+
+]
 const LandingPage = () => {
    const [[page, direction], setPage] = useState([0, 1]);
 
@@ -102,14 +122,29 @@ const controls = useAnimation();
       transition={{ duration: 1, ease: 'easeInOut' }}
       className="absolute inset-0 w-full h-full z-0"
     >
+     <>
+    {/* Desktop image */}
+    <div className="hidden sm:block w-full h-full">
       <Image
-        src={images[imageIndex]}
-        alt={`Slide ${imageIndex}`}
+        src={images[imageIndex].landscape}
+        alt={`Slide ${imageIndex} desktop`}
         fill
         priority
-        className="object-cover "
-        
+        className="object-cover"
       />
+    </div>
+
+    {/* Mobile image */}
+    <div className="block sm:hidden w-full h-full">
+      <Image
+        src={images[imageIndex].portrait}
+        alt={`Slide ${imageIndex} mobile`}
+        fill
+        priority
+        className="object-cover"
+      />
+    </div>
+  </>
     </motion.div>
   </AnimatePresence>
 

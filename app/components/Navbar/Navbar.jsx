@@ -224,7 +224,7 @@ const Navbar = () => {
                   <IoClose className='text-2xl text-white' />
                 </button>
               </div>
-              <ul className="space-y-4 text-lg flex-col text-white mt-24 mx-8 ">
+              <ul className="space-y-4 text-lg flex-col text-white mt-18 mx-8 ">
                 <li>
                   <Link href='/' onClick={closeSidebar} className='block border-b pt-4 border-b-gray-400'>
                     Home
